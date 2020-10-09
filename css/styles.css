@@ -1,0 +1,106 @@
+html, body {
+    margin: 0;
+    font-family: system-ui,-apple-system,BlinkMacSystemFont,Segoe UI, Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+main > .hello > img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 2rem 0;
+}
+main > .hello > h1 {
+    font-size: 3.5rem;
+    margin: 0;
+    line-height: 1.15;
+}
+main > .hello > p {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+main > .items {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+main > .items > .item {
+    margin: .93rem;
+    -webkit-flex-basis: 40%;
+    -ms-flex-preferred-size: 40%;
+    flex-basis: 40%;
+    padding: 1.5rem;
+    text-align: left;
+    text-decoration: none;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    transition: color 0.15s ease,border-color 0.15s ease;
+    color: #333;
+}
+
+main > .items > .item:hover {
+    color: #107fd2;
+    border-color: #107fd2;
+}
+
+main > .items > .item > h3 {
+    margin: 0 0 1rem 0;
+    font-size: 1.5rem;
+}
+
+main > .items > .item > p {
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 700px) {
+    main > .items > .item {
+        -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    }
+    main {
+        width: 100%;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        margin-top: 0rem;
+    }
+    main > .hello > img {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 2rem;
+    }
+    main > .hello > h1 {
+        line-height: 1;
+        font-size: 2rem;
+    }
+}
+
+footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 3.2rem 0 1.6rem;
+    animation: up 0.4s 0.4s backwards;
+}
+
+footer::after {
+    content: "Feito com ♥️ por Valdecir Junior";
+    opacity: 0.6;
+    font-size: 0.8rem;
+}
