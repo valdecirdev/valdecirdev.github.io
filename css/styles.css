@@ -6,7 +6,6 @@ main {
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
-    padding: 0 20px;
 }
 main > .hello > img {
     width: 200px;
@@ -76,7 +75,7 @@ main > .items > .item > p {
         flex-basis: 100%;
     }
     main {
-        width: 100%;
+        width: 100vw;
         -webkit-flex-direction: row;
         -ms-flex-direction: row;
         flex-direction: row;
