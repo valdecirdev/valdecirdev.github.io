@@ -32,10 +32,10 @@ main > .items {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-align-items: center;
+    /* -webkit-align-items: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center;
+    align-items: center; */
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -61,14 +61,37 @@ main > .items > .item:hover {
 }
 
 main > .items > .item > h3 {
-    margin: 0 0 1rem 0;
-    font-size: 1.5rem;
+    margin: 0 0 .8rem 0;
+    font-size: 1.3rem;
 }
 
 main > .items > .item > p {
     margin: 0;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     line-height: 1.5;
+}
+
+.tag {
+    border-radius: 15px;
+    padding: 3px 10px;
+    font-size: .8rem;
+    font-weight: bold;
+}
+.tag + h3{
+    margin-top: 15px !important;
+}
+
+.bg-purple {
+    background-color: #8257e6;
+    color: #fff;
+}
+.bg-blue {
+    background-color: #08bcf3;
+    color: #fff;
+}
+.bg-orange {
+    background-color: rgb(255, 136, 0);
+    color: #fff
 }
 
 @media (max-width: 700px) {
