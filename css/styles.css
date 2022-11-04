@@ -27,6 +27,7 @@ main > .hello > p {
     color: #333;
 }
 
+/* med items */
 main > .items {
     display: -webkit-box;
     display: -webkit-flex;
@@ -66,6 +67,49 @@ main > .items > .item > h3 {
 }
 
 main > .items > .item > p {
+    margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+/* full items */
+
+main > .full-items {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+main > .full-items  > .item {
+    margin: .93rem;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    padding: 1.5rem;
+    text-align: left;
+    text-decoration: none;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    transition: color 0.15s ease,border-color 0.15s ease;
+    color: #333;
+}
+
+main > .full-items  > .item:hover {
+    color: #107fd2;
+    border-color: #107fd2;
+}
+
+main > .full-items  > .item > h3 {
+    margin: 0 0 .8rem 0;
+    font-size: 1.3rem;
+}
+
+main > .full-items  > .item > p {
     margin: 0;
     font-size: 1.1rem;
     line-height: 1.5;
@@ -126,7 +170,34 @@ footer {
 }
 
 footer::after {
-    content: "Feito com ♥️ por Valdecir Junior";
+    content: "Feito com ♥️";
     opacity: 0.6;
     font-size: 0.8rem;
+}
+
+.quote {
+    width: max-content;
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.03) 2px 8.1px 20.1px !important;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(32, 32, 32, 0.1);
+    border-image: initial;
+    border-radius: 5px;
+    padding: 15px 25px;
+}
+
+.quote p {
+    padding: 0;
+    margin: 0;
+}
+
+.jobs {
+    list-style: none;
+    padding: 0px;
+}
+
+.jobs li {
+    font-size: 1.2rem;
+    padding: 5px 0px;
 }
